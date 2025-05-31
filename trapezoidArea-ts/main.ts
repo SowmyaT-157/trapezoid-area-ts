@@ -16,3 +16,18 @@ if (isNaN(input)) {
   const result = divideByTwo(input);
   console.log(`Output: ${result}`);
 }
+
+
+function multiply(divisionValue: number, h: number): number {
+  return divisionValue * h;
+}
+
+const divisionValue = Number(prompt('Enter divisionValue: '));
+const h = Number(prompt('Enter height (h): '));
+
+if (isNaN(divisionValue) || isNaN(h)) {
+  console.log('Please enter valid numbers.');
+} else {
+  const result = multiply(divisionValue, h);
+  console.log(`Output: ${result}`);
+}
